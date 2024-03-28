@@ -1,0 +1,16 @@
+---
+interface Props {
+  label: string;
+}
+
+const { label } = Astro.props;
+---
+
+<button
+  aria-label={label}
+  class="px-4 py-2 rounded-full
+  bg-gradient-to-r from-secondary to-primary text-white
+  hover:bg-gradient-to-r hover:from-secondary/80 hover:to-primary/80"
+>
+  {label}
+</button>

@@ -1,0 +1,49 @@
+---
+import Logo from "@/components/icons/Logo.astro";
+import Button from "@/components/Buttons/ButtonPrimary.astro";
+const data = ["Home", "About", "Contact", "Blog", "Careers"];
+---
+
+<header class="w-full">
+  <nav class="w-full h-full flex items-center justify-between">
+    <Logo />
+    <ul class="flex items-center gap-x-4 h-full">
+      {
+        data.map((item) => (
+          <li class="h-full text-base">
+            <a
+              class="h-full flex items-center link-header transition delay-500 ease-in-out "
+              href={`#${item}`}
+            >
+              {item}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    <Button label="Request Invite" />
+  </nav>
+</header>
+<style>
+  header {
+    height: 80px;
+    background-color: hsl(0, 0%, 100%);
+  }
+  .link-header {
+    color: hsl(233, 8%, 62%);
+    border-bottom: 4px transparent solid;
+  }
+  .link-header:hover {
+    border-image: linear-gradient(
+        to left top,
+        hsl(192, 70%, 51%),
+        hsl(136, 65%, 51%)
+      )
+      0 0 5 0;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 4px;
+    border-style: solid;
+  }
+</style>
