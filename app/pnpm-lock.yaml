@@ -8,6 +8,9 @@ dependencies:
   '@astrojs/check':
     specifier: ^0.5.10
     version: 0.5.10(typescript@5.4.3)
+  '@fontsource-variable/public-sans':
+    specifier: ^5.0.18
+    version: 5.0.18
   astro:
     specifier: ^4.5.10
     version: 4.5.10(typescript@5.4.3)
@@ -786,6 +789,10 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@fontsource-variable/public-sans@5.0.18:
+    resolution: {integrity: sha512-sDPItjfl8wSnFZgd2OmN6lZYRgI9NYofCUt6qtXMSCajDaaD4rbt3e6DzlvtRYYPtEqUT4Pl822zSZyZCcIbcg==}
+    dev: false
 
   /@jridgewell/gen-mapping@0.3.5:
     resolution: {integrity: sha512-IzL8ZoEDIBRWEzlCcRhOaCupYyN5gdIK+Q6fbFdPDg6HqX6jpkItn7DFIpW9LQzXG6Df9sA7+OKnq0qlz/GaQg==}
