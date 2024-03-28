@@ -1,13 +1,16 @@
 ---
 import Logo from "@/components/icons/Logo.astro";
 import Button from "@/components/Buttons/ButtonPrimary.astro";
+import ButtonMobineNav from "@/components/Buttons/ButtonMobileNav";
+import MobileNav from "./MobileNav";
+
 const data = ["Home", "About", "Contact", "Blog", "Careers"];
 ---
 
-<header class="w-full">
-  <nav class="w-full h-full flex items-center justify-between">
+<header class="w-full relative">
+  <nav class="w-full h-full flex items-center justify-around">
     <Logo />
-    <ul class="flex items-center gap-x-4 h-full">
+    <ul class="hidden lg:flex items-center gap-x-4 h-full">
       {
         data.map((item) => (
           <li class="h-full text-base">
@@ -21,8 +24,10 @@ const data = ["Home", "About", "Contact", "Blog", "Careers"];
         ))
       }
     </ul>
-    <Button label="Request Invite" />
+    <Button class="hidden lg:block" label="Request Invite" />
+    <ButtonMobineNav client:load />
   </nav>
+  <MobileNav client:load data={data} />
 </header>
 <style>
   header {
