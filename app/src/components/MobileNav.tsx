@@ -14,7 +14,7 @@ function MobileNav(props: Props) {
      justify-center 
     lg:hidden`}
     >
-      <ul className="w-full shadow-lg flex flex-col justify-center items-center gap-y-4 p-3">
+      <ul className="w-full bg-white shadow-lg flex flex-col justify-center items-center gap-y-4 p-3">
         {data.map((item, index) => (
           <li key={index}>
             <a href={`#${item}`}>{item}</a>

@@ -1,0 +1,31 @@
+---
+import ButtonPrimary from "@/components/buttons/ButtonPrimary.astro";
+---
+
+<section class="flex lg:h-[656px] relative">
+  <article class="w-1/2 flex items-center justify-center z-20">
+    <div class="w-1/2 flex flex-col gap-y-5">
+      <h1 class="text-4xl text-balance">Next generation digital banking</h1>
+
+      <blockquote class="text-pretty">
+        Take your financial life online. Your Easybank account will be a
+        one-stop-shop for spending, saving, budgeting, investing, and much more.
+      </blockquote>
+
+      <div class="w-full">
+        <ButtonPrimary label="Request Invite" />
+      </div>
+    </div>
+  </article>
+  <div class="relative px-10 w-1/2">
+    <img
+      class="absolute -top-32 z-40"
+      src="./images/image-mockups.webp"
+      alt="easybank app"
+    />
+  </div>
+  <div
+    class="w-1/2 h-full bg-no-repeat bg-[url('./images/bg-intro-desktop.svg')] bg-cover absolute right-16 -top-40"
+  >
+  </div>
+</section>

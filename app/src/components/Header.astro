@@ -1,13 +1,13 @@
 ---
 import Logo from "@/components/icons/Logo.astro";
-import Button from "@/components/Buttons/ButtonPrimary.astro";
-import ButtonMobineNav from "@/components/Buttons/ButtonMobileNav";
+import Button from "@/components/buttons/ButtonPrimary.astro";
+import ButtonMobineNav from "@/components/buttons/ButtonMobileNav.tsx";
 import MobileNav from "./MobileNav";
 
 const data = ["Home", "About", "Contact", "Blog", "Careers"];
 ---
 
-<header class="w-full relative">
+<header class="w-full relative z-50">
   <nav class="w-full h-full flex items-center justify-around">
     <Logo />
     <ul class="hidden lg:flex items-center gap-x-4 h-full">
