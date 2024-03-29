@@ -1,7 +1,7 @@
 {
   "extends": "astro/tsconfigs/strict",
   "compilerOptions": {
-    "baseUrl": "E:/laragon/www/frontendmentor/easybank-landing-page-master/app",
+    "baseUrl": "./",
     "paths": {
       "@/*": [
         "./src/*"
