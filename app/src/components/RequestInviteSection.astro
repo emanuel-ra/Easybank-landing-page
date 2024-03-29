@@ -2,9 +2,11 @@
 import ButtonPrimary from "@/components/buttons/ButtonPrimary.astro";
 ---
 
-<section class="flex lg:h-[656px] relative">
-  <article class="w-1/2 flex items-center justify-center z-20">
-    <div class="w-1/2 flex flex-col gap-y-5">
+<section class="relative flex flex-col lg:flex-row lg:h-[656px]">
+  <article
+    class="relative w-full lg:w-1/2 flex items-center order-1 lg:order-0 justify-center z-20"
+  >
+    <div class="lg:w-1/2 max-md:text-center flex flex-col gap-y-5">
       <h1 class="text-4xl text-balance">Next generation digital banking</h1>
 
       <blockquote class="text-pretty">
@@ -17,15 +19,23 @@ import ButtonPrimary from "@/components/buttons/ButtonPrimary.astro";
       </div>
     </div>
   </article>
-  <div class="relative px-10 w-1/2">
+
+  <div class="relative h-[330px] w-full lg:w-1/2 px-10 order-0 lg:order-1">
     <img
-      class="absolute -top-32 z-40"
+      class="absolute max-md:left-0 -top-32 z-40"
       src="./images/image-mockups.webp"
       alt="easybank app"
     />
   </div>
+
   <div
-    class="w-1/2 h-full bg-no-repeat bg-[url('./images/bg-intro-desktop.svg')] bg-cover absolute right-16 -top-40"
+    role="img"
+    class="w-full lg:w-1/2 h-full absolute
+    bg-no-repeat bg-cover
+    bg-[url('./images/bg-intro-mobile.svg')]
+    lg:bg-[url('./images/bg-intro-desktop.svg')]
+    -top-36
+    lg:right-16 lg:-top-40"
   >
   </div>
 </section>
