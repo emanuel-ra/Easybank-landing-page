@@ -2,7 +2,9 @@
 import ButtonPrimary from '@/components/Buttons/ButtonPrimary.astro'
 ---
 
-<section class='relative flex flex-col lg:flex-row lg:h-[656px] reques-section'>
+<section
+  class='relative flex flex-col lg:flex-row lg:h-[750px] reques-section overflow-hidden'
+>
   <article
     class='relative w-full lg:w-1/2 flex items-center order-1 lg:order-0 justify-center z-20'
   >
@@ -22,7 +24,7 @@ import ButtonPrimary from '@/components/Buttons/ButtonPrimary.astro'
 
   <div class='relative h-[330px] w-full lg:w-1/2 px-10 order-0 lg:order-1'>
     <img
-      class='absolute max-md:left-0 -top-32 z-40'
+      class='absolute max-md:left-0 lg:-right-32 -top-32 z-40'
       src='./images/image-mockups.webp'
       alt='easybank app'
     />
@@ -35,7 +37,7 @@ import ButtonPrimary from '@/components/Buttons/ButtonPrimary.astro'
     bg-[url('./images/bg-intro-mobile.svg')]
     lg:bg-[url('./images/bg-intro-desktop.svg')]
     -top-36
-    lg:right-16 lg:-top-40"
+    lg:right-0 lg:-top-36"
   >
   </div>
 </section>
