@@ -24,11 +24,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./macbook.jpg)
+![](./macbook.png)
 
-![](./ipad.jpg)
+![](./ipad.png)
 
-![](./iphone.jpg)
+![](./iphone.png)
 
 ### Links
 
