@@ -1,21 +1,21 @@
 ---
-import Logo from "@/components/icons/Logo.astro";
-import Button from "@/components/buttons/ButtonPrimary.astro";
-import ButtonMobineNav from "@/components/buttons/ButtonMobileNav.tsx";
-import MobileNav from "./MobileNav";
+import ButtonMobineNav from '@/components/buttons/ButtonMobileNav.tsx'
+import Button from '@/components/buttons/ButtonPrimary.astro'
+import Logo from '@/components/icons/Logo.astro'
+import MobileNav from './MobileNav'
 
-const data = ["Home", "About", "Contact", "Blog", "Careers"];
+const data = ['Home', 'About', 'Contact', 'Blog', 'Careers']
 ---
 
-<header class="w-full relative z-50">
-  <nav class="w-full h-full flex items-center justify-around">
+<header class='w-full relative z-50'>
+  <nav class='w-full h-full flex items-center justify-around'>
     <Logo />
-    <ul class="hidden lg:flex items-center gap-x-4 h-full">
+    <ul class='hidden lg:flex items-center gap-x-4 h-full'>
       {
         data.map((item) => (
-          <li class="h-full text-base">
+          <li class='h-full text-base'>
             <a
-              class="h-full flex items-center link-header transition delay-500 ease-in-out "
+              class='h-full flex items-center link-header transition delay-500 ease-in-out '
               href={`#${item}`}
             >
               {item}
@@ -24,10 +24,16 @@ const data = ["Home", "About", "Contact", "Blog", "Careers"];
         ))
       }
     </ul>
-    <Button class="hidden lg:block" label="Request Invite" />
+    <Button
+      class='hidden lg:block'
+      label='Request Invite'
+    />
     <ButtonMobineNav client:load />
   </nav>
-  <MobileNav client:load data={data} />
+  <MobileNav
+    client:load
+    data={data}
+  />
 </header>
 <style>
   header {

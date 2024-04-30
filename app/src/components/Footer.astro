@@ -1,18 +1,97 @@
 ---
-import Logo from "./icons/Logo.astro";
+import Button from '@/components/buttons/ButtonPrimary.astro'
+import Facebook from './icons/Facebook.astro'
+import Instagram from './icons/Instagram.astro'
+import Logo from './icons/Logo.astro'
+import Pinterest from './icons/Pinterest.astro'
+import Twiter from './icons/Twiter.astro'
+import Youtube from './icons/Youtube.astro'
+const data = [
+  'About Us',
+  'Blog',
+  'Contact',
+  'Careers',
+  'Support',
+  'Privacy Policy',
+]
 ---
 
-<footer class="px-40 py-10">
-  <div>
-    <Logo class="text-white" />
+<footer class='px-40 py-10'>
+  <div class='flex justify-between'>
+    <div class='flex gap-x-10'>
+      <div class='flex flex-col justify-between gap-y-4'>
+        <Logo class='text-white' />
 
-    <div></div>
+        <div class='flex gap-x-2'>
+          <a
+            href='#'
+            class='group'
+          >
+            <Facebook class='fill-white group-hover:fill-secondary' />
+          </a>
+          <a
+            href='#'
+            class='group'
+          >
+            <Youtube class='fill-white group-hover:fill-secondary' />
+          </a>
+          <a
+            href='#'
+            class='group'
+          >
+            <Twiter class='fill-white group-hover:fill-secondary' />
+          </a>
+          <a
+            href='#'
+            class='group'
+          >
+            <Pinterest class='fill-white group-hover:fill-secondary' />
+          </a>
+          <a
+            href='#'
+            class='group'
+          >
+            <Instagram class='fill-white group-hover:fill-secondary' />
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <ul
+          class='grid grid-cols-1 lg:grid-cols-2 gap-x-4 h-full gap-y-2 text-white'
+        >
+          {
+            data.map((item) => (
+              <li class='h-full text-base'>
+                <a
+                  class='h-full flex items-center link-header transition  ease-in-out hover:text-secondary '
+                  href={`#${item}`}
+                >
+                  {item}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+    <div class='flex flex-col gap-y-3'>
+      <div class='flex justify-center items-center'>
+        <Button
+          class='hidden lg:block'
+          label='Request Invite'
+        />
+      </div>
+      <span class='text-white/70 text-sm'>© Easybank. All Rights Reserved</span
+      >
+    </div>
   </div>
-  <div></div>
-  <div></div>
+  <style>
+    footer {
+      background-color: hsl(233, 26%, 24%);
+    }
+    .copyright {
+      color: hsl(0, 0%, 100%);
+    }
+  </style>
 </footer>
-<style>
-  footer {
-    background-color: hsl(233, 26%, 24%);
-  }
-</style>
