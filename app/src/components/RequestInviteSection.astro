@@ -3,12 +3,12 @@ import ButtonPrimary from '@/components/Buttons/ButtonPrimary.astro'
 ---
 
 <section
-  class='relative flex flex-col lg:flex-row lg:h-[750px] reques-section overflow-hidden'
+  class='relative flex flex-col lg:flex-row lg:h-[750px] reques-section lg:overflow-hidden'
 >
   <article
     class='relative w-full lg:w-1/2 flex items-center order-1 lg:order-0 justify-center z-20'
   >
-    <div class='lg:w-1/2 max-md:text-center flex flex-col gap-y-5'>
+    <div class='lg:w-1/2 max-lg:text-center flex flex-col gap-y-5'>
       <h1 class='text-4xl text-balance'>Next generation digital banking</h1>
 
       <blockquote class='text-pretty'>
@@ -22,9 +22,11 @@ import ButtonPrimary from '@/components/Buttons/ButtonPrimary.astro'
     </div>
   </article>
 
-  <div class='relative h-[330px] w-full lg:w-1/2 px-10 order-0 lg:order-1'>
+  <div
+    class='relative h-[330px] md:h-[800px] w-full lg:w-1/2 px-10 order-0 lg:order-1'
+  >
     <img
-      class='absolute max-md:left-0 lg:-right-28 -top-32 z-40'
+      class='absolute max-lg:left-0 -top-32 lg:-right-28 z-40'
       src='./images/image-mockups.webp'
       alt='easybank app'
     />

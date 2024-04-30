@@ -10,7 +10,7 @@ import CardFeature from './CardFeature.astro'
   class='w-full features-section flex flex-col lg:px-40 py-10 gap-y-2 relative'
 >
   <div
-    class='w-full lg:w-1/2 flex flex-col justify-center max-md:items-center gap-4 mb-10 px-4 max-md:text-center lg:absolute lg:-top-16'
+    class='w-full lg:w-1/2 flex flex-col justify-center max-lg:items-center gap-4 mb-10 px-4 max-lg:text-center lg:absolute lg:-top-16'
   >
     <h2 class='text-3xl text-balance'>Why choose Easybank?</h2>
     <blockquote class='text-pretty'>
@@ -19,7 +19,9 @@ import CardFeature from './CardFeature.astro'
     </blockquote>
   </div>
 
-  <div class='w-full grid grid-cols-1 lg:grid-cols-4 gap-10 lg:mt-10'>
+  <div
+    class='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:mt-10'
+  >
     <CardFeature>
       <div
         class='mb-10'
