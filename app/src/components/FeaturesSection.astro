@@ -10,17 +10,22 @@ import CardFeature from './CardFeature.astro'
   class='w-full features-section flex flex-col lg:px-40 py-10 gap-y-2 relative'
 >
   <div
-    class='w-full lg:w-1/2 flex flex-col justify-center max-lg:items-center gap-4 mb-10 px-4 max-lg:text-center lg:absolute lg:-top-16'
+    class='w-full lg:absolute lg:-top-24 lg:left-0 gap-y-10 lg:py-10'
+    style='background-color: hsl(220, 16%, 96%)'
   >
-    <h2 class='text-3xl text-balance'>Why choose Easybank?</h2>
-    <blockquote class='text-pretty'>
-      We leverage Open Banking to turn your bank account into your financial
-      hub. Control your finances like never before.
-    </blockquote>
+    <div
+      class='w-full lg:w-[60%] flex flex-col justify-center max-lg:items-center gap-4 mb-10 px-40 max-lg:text-center'
+    >
+      <h2 class='text-3xl text-balance'>Why choose Easybank?</h2>
+      <blockquote class='text-pretty'>
+        We leverage Open Banking to turn your bank account into your financial
+        hub. Control your finances like never before.
+      </blockquote>
+    </div>
   </div>
 
   <div
-    class='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:mt-10'
+    class='w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:mt-32'
   >
     <CardFeature>
       <div
@@ -98,9 +103,10 @@ import CardFeature from './CardFeature.astro'
       </blockquote>
     </CardFeature>
   </div>
+
+  <style>
+    .features-section {
+      background-color: hsl(220, 16%, 96%);
+    }
+  </style>
 </section>
-<style>
-  .features-section {
-    background-color: hsl(220, 16%, 96%);
-  }
-</style>
