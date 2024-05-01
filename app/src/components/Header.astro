@@ -13,10 +13,11 @@ const data = ['Home', 'About', 'Contact', 'Blog', 'Careers']
     <ul class='hidden lg:flex items-center gap-x-4 h-full'>
       {
         data.map((item) => (
-          <li class='h-full text-base'>
+          <li class='h-full text-base '>
             <a
-              class='h-full flex items-center link-header transition delay-500 ease-in-out '
-              href={`#${item}`}
+              class='h-full flex items-center link-header transition  ease-in-out font-semibold text-slate-500 hover:text-slate-700  '
+              href={`/`}
+              aria-label={`Link to ${item}`}
             >
               {item}
             </a>
@@ -41,7 +42,6 @@ const data = ['Home', 'About', 'Contact', 'Blog', 'Careers']
     background-color: hsl(0, 0%, 100%);
   }
   .link-header {
-    color: hsl(233, 8%, 62%);
     border-bottom: 4px transparent solid;
   }
   .link-header:hover {
